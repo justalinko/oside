@@ -82,8 +82,8 @@
                     <select class="form-control select2">
                       <option>- PILIH RW -</option>
                       <?php
-                      for ($i=0; $i <=7 ; $i++) { 
-                        ?><option value="<?=$i;?>"><?=$i;?></option>
+                      for ($i=1; $i <=7 ; $i++) { 
+                        ?><option value="<?=$i;?>">RW <?=str_pad($i,2,"0",STR_PAD_LEFT);?></option>
                       <?php
                       }
                       ?>
@@ -96,8 +96,8 @@
                       <option>- PILIH RT -</option>
 
                       <?php
-                      for ($i=0; $i <=36 ; $i++) { 
-                        ?><option value="<?=$i;?>"><?=$i;?></option>
+                      for ($i=1; $i <=36 ; $i++) { 
+                        ?><option value="<?=$i;?>">RT <?=str_pad($i,2,"0",STR_PAD_LEFT);?></option>
                       <?php
                       }
                       ?>
