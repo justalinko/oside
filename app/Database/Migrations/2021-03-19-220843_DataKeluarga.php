@@ -26,6 +26,11 @@ class DataKeluarga extends Migration
 							'nomer_nik'      => ['type' => 'INT',
 												'constraint' => 100
 												],
+							'status_kawin' => ['type' => 'ENUM',
+											   'constraint' => ['kawin','belum kawin']
+											],
+							'pekerjaan'    => ['type' => 'VARCHAR',
+												'constraint' => 100 ]
 							]);
 	}
 
